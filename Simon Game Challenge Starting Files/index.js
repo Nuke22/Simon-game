@@ -19,10 +19,6 @@ $("div.btn").on("click", function (event) {
 })
 
 function checkAnswer () {
-    console.log("userSequence : " + usersSequence);
-    console.warn("gamePattern : " + gamePattern);
-    console.warn(usersSequence[lvl]);
-    console.warn(gamePattern[lvl]);
     let tail = usersSequence.length - 1;
     if (usersSequence[tail] !== gamePattern[tail]) {
         $("h1").text("Game over! Press any key to restart!");
